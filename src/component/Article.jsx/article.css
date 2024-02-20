@@ -1,0 +1,71 @@
+/* General styling */
+.article-head {
+  font-size: 35px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+#article {
+  padding: 60px;
+  height: auto;
+  background-color: #f1fada99;
+}
+
+.article-box {
+  margin: 0 20px; /* Adjusted margin for better spacing */
+  padding: 10px;
+  height: 230px;
+  width: 100%;
+  max-width: 450px; /* Maximum width for larger screens */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.article-text {
+  margin-left: 70px; /* Adjusted margin for better spacing */
+}
+
+.article-text p {
+  position: relative;
+  bottom: 15px;
+  width: 100%;
+  max-width: 220px;
+  line-height: 1.2;
+}
+
+/* Responsive styling */
+@media (max-width: 767px) {
+  .article-head {
+    margin-left: 8px; 
+  }
+
+  .article-box {
+    margin: 0; 
+  }
+
+  .article-text {
+    margin-left: 50px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .article-text p{
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .article-text h3{
+    font-size: 15px;
+  }
+
+}
+
+
+

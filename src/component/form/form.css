@@ -1,0 +1,74 @@
+/* YourForm.css */
+
+#form {
+    background-color: rgb(25, 0, 255);
+    height: auto;
+    width: 100%;
+    color: #fff;
+    /* padding: 50px; */
+  }
+  
+  .form-container {
+    padding: 50px 0;
+    text-align: center; /* Center align content within the form container */
+  }
+  
+  .form-container h4 {
+    margin-bottom: 20px;
+    max-width: 600px; /* Use max-width instead of width for better responsiveness */
+    margin: 50px auto; /* Center the h4 within its parent */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .col-md-3 {
+    flex: 0 0 calc(50% - 20px); /* Adjusted column width for better spacing on smaller screens */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    max-width: 620px;
+    margin: 30px 0;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #34aedb;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+  
+  @media (max-width: 767px) {
+    .submit-btn {
+        width: 50%; /* Adjust for smaller screens */
+        max-width: none; /* Remove the maximum width on smaller screens if needed */
+    }
+}
+  /* Responsive styling */
+  @media (min-width: 768px) {
+    .col-md-3 {
+      flex: 0 0 calc(25% - 20px); /* Revert to original column width for larger screens */
+    }
+  }
+  

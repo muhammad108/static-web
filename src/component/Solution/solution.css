@@ -1,0 +1,72 @@
+/* Global styles */
+#solution {
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-head {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.paragraph-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Row and Column layout */
+.row {
+    margin-left: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    margin: 0 10px 20px; 
+}
+
+.service-box i {
+    color: rgb(107, 50, 168);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+    .service-box {
+        flex: 0 0 calc(33.33% - 20px); /* Adjusted width to fit 3 boxes in a row on larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .service-box {
+        flex: 0 0 calc(25% - 20px); /* Revert to original width for large screens */
+    }
+}
