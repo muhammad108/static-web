@@ -12,7 +12,7 @@ function App() {
     <>
 
       <Navbar/>
-      <Solution />
+      <Solutio />
       <About/>
       <Leadership/>
       <Article/>
